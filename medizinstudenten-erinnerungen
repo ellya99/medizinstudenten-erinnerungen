@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medizinstudenten Erinnerungen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .container {
+            padding: 2em;
+        }
+        .instructions {
+            background-color: #e0e0e0;
+            padding: 1em;
+            border-radius: 8px;
+            margin-bottom: 2em;
+        }
+        .upload-section {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .upload-section a {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #4CAF50;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Erinnerungen an das Medizinstudium</h1>
+        <h2>Vilnius University</h2>
+    </header>
+
+    <div class="container">
+        <div class="instructions">
+            <h3>Anweisungen</h3>
+            <p>Willkommen auf der Webseite zur Sammlung der besten Fotos und Videos während unseres Medizinstudiums. Bitte achtet darauf, dass ihr keine doppelten Bilder hochladet. Trennt die Uploads nach Gruppen:</p>
+            <ul>
+                <li>Medizinstudenten: 6 Gruppen</li>
+                <li>Zahnmedizinstudenten: 1 Gruppe</li>
+            </ul>
+            <p>Nutzt den folgenden Link, um eure Fotos und Videos hochzuladen:</p>
+        </div>
+
+        <div class="upload-section">
+            <a href="https://drive.google.com/drive/folders/your-folder-link-here" target="_blank">Fotos und Videos hochladen</a>
+        </div>
+
+        <div class="gallery">
+            <img src="data:image/jpeg;base64,{{image_data}}" alt="Vilnius University">
+            <!-- Füge hier weitere Bilder hinzu -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Medizinstudenten und Zahnmedizinstudenten der Vilnius University</p>
+    </footer>
+</body>
+</html>
